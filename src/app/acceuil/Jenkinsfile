@@ -1,0 +1,21 @@
+node {
+    stage ('Checkout SCM'){
+        git branch : 'main', url:'https://github.com/Messaadii/healthCare.git'
+    }
+
+    stage ('Install node module'){
+        sh "npm install"
+    }
+
+     stage ('Test'){
+        sh "npm run test-headless"
+    }
+
+     stage ('Build'){
+        sh "npm run build --prod"
+    }
+
+     /*stage ('Copy'){
+        sh "cp -a --from=build /app/dist/santeLib /usr/share/nginx/html"
+    }*/
+}
