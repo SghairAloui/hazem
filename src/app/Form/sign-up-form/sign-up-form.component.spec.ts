@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SignUpFormComponent } from './sign-up-form.component';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('SignUpFormComponent', () => {
   let component: SignUpFormComponent;
@@ -8,7 +9,11 @@ describe('SignUpFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SignUpFormComponent ]
+      declarations: [ SignUpFormComponent ],
+      providers: [
+        // Provide any other services your component depends on
+        TranslateService,
+      ],
     })
     .compileComponents();
   });
