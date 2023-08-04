@@ -1,21 +1,17 @@
 node {
-    stage ('Checkout SCM'){
-        git branch : 'main', url:'https://github.com/SghairAloui/hazem.git'
+    stage ('Checkout SCM') {
+        git branch: 'main', url: 'https://github.com/SghairAloui/hazem.git'
     }
 
-    stage ('Install node module'){
-        sh "npm install"
+    stage ('Install node module') {
+        bat "npm install" // Utilisation de la commande "bat" pour exécuter des commandes batch sur Windows
     }
 
-     stage ('Test'){
-        sh "npm run test-headless"
+    stage ('Test') {
+        bat "npm run test-headless" // Utilisation de la commande "bat" pour exécuter des commandes batch sur Windows
     }
 
-     stage ('Build'){
-        sh "npm run build --prod"
+    stage ('Build') {
+        bat "npm run build --prod" // Utilisation de la commande "bat" pour exécuter des commandes batch sur Windows
     }
-
-     /*stage ('Copy'){
-        sh "cp -a --from=build /app/dist/santeLib /usr/share/nginx/html"
-    }*/
 }
