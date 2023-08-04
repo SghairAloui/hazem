@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 
-var SockJs = require("sockjs-client");
-var Stomp = require("stompjs");
+import * as SockJs from "sockjs-client";
+import * as Stomp from "stompjs";
+
 
 @Injectable({
   providedIn: 'root'
