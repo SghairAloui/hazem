@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { SecretaryService } from './secretary.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('SecretaryService', () => {
   let service: SecretaryService;
@@ -8,6 +9,7 @@ describe('SecretaryService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(SecretaryService);
+    imports: [HttpClientTestingModule]
   });
 
   it('should be created', () => {

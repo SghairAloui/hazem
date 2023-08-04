@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ConversationService } from './conversation.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('ConversationService', () => {
   let service: ConversationService;
@@ -8,6 +9,7 @@ describe('ConversationService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(ConversationService);
+    imports: [HttpClientTestingModule]
   });
 
   it('should be created', () => {

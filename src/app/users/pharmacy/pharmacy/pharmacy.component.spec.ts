@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PharmacyComponent } from './pharmacy.component';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('PharmacyComponent', () => {
   let component: PharmacyComponent;
@@ -8,7 +9,7 @@ describe('PharmacyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PharmacyComponent ]
+      declarations: [ PharmacyComponent ],providers: [TranslateService],
     })
     .compileComponents();
   });

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PatientDoctorComponent } from './patient-doctor.component';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('PatientDoctorComponent', () => {
   let component: PatientDoctorComponent;
@@ -8,7 +9,7 @@ describe('PatientDoctorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PatientDoctorComponent ]
+      declarations: [ PatientDoctorComponent ], providers: [TranslateService],
     })
     .compileComponents();
   });
