@@ -9,7 +9,7 @@ describe('PharmacyDiseaseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PharmacyDiseaseComponent ],imports: [HttpClientTestingModule]
+      declarations: [ PharmacyDiseaseComponent ]
     })
     .compileComponents();
   });

@@ -9,7 +9,7 @@ describe('SignInFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SignInFormComponent ],imports: [HttpClientTestingModule]
+      declarations: [ SignInFormComponent ]
     })
     .compileComponents();
   });

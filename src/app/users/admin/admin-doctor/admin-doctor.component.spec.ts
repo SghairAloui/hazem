@@ -9,7 +9,7 @@ describe('AdminDoctorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdminDoctorComponent ],imports: [HttpClientTestingModule],
+      declarations: [ AdminDoctorComponent ]
     })
     .compileComponents();
   });

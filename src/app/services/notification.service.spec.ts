@@ -9,7 +9,6 @@ describe('NotificationService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(NotificationService);
-    imports: [HttpClientTestingModule]
   });
 
   it('should be created', () => {

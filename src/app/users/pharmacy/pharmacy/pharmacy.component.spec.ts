@@ -9,7 +9,7 @@ describe('PharmacyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PharmacyComponent ],providers: [TranslateService],
+      declarations: [ PharmacyComponent ]
     })
     .compileComponents();
   });

@@ -9,7 +9,6 @@ describe('AppointmentService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(AppointmentService);
-    imports: [HttpClientTestingModule]
 
   });
 

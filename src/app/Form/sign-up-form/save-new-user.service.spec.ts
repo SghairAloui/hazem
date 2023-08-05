@@ -9,7 +9,6 @@ describe('SaveNewUserService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(SaveNewUserService);
-    imports: [HttpClientTestingModule]
 
   });
 

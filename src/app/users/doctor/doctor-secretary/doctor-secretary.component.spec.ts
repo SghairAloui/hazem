@@ -9,7 +9,7 @@ describe('DoctorSecretaryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DoctorSecretaryComponent ],providers: [TranslateService],
+      declarations: [ DoctorSecretaryComponent ]
     })
     .compileComponents();
   });

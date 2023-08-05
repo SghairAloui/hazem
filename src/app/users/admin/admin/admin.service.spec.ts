@@ -10,7 +10,6 @@ describe('AdminService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(AdminService);
-    imports: [HttpClientTestingModule]
   });
 
   it('should be created', () => {

@@ -9,7 +9,7 @@ describe('AdminPharmacyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdminPharmacyComponent ],imports: [HttpClientTestingModule]
+      declarations: [ AdminPharmacyComponent ]
     })
     .compileComponents();
   });

@@ -9,7 +9,7 @@ describe('SecretaryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SecretaryComponent ],imports: [HttpClientTestingModule],
+      declarations: [ SecretaryComponent ]
     })
     .compileComponents();
   });

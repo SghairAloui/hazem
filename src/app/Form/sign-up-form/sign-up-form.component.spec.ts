@@ -10,10 +10,6 @@ describe('SignUpFormComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ SignUpFormComponent ],
-      providers: [
-        // Provide any other services your component depends on
-        TranslateService,
-      ],
       imports: [RouterTestingModule],
     })
     .compileComponents();
