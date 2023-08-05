@@ -11,15 +11,4 @@ node {
         bat 'npm run build --prod' // Utilisation de la commande "bat" pour exécuter des commandes batch sur Windows
     }
 
-    stage ('Build docker image'){
-        steps {
-            bat 'docker build -t moohamedd/jenkins_test_CI:v1 .'
-        }
-    }
-
-      stage ('Push Docker image'){
-        steps {
-            bat 'docker push moohamedd/jenkins_test_CI:v1 '
-        }
-    }
 }
