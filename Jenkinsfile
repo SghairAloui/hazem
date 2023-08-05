@@ -17,7 +17,7 @@ node {
     }
 
     stage ('Push docker image'){
-        bat "docker run moohamedd/jenkins_test_ci:v1"
+        bat "docker push moohamedd/jenkins_test_ci:v1"
     }
 
     
