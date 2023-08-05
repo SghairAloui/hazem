@@ -1,9 +1,5 @@
 node {
 
-       environment {
-        DOCKER_HUB_USERNAME = credentials('moohamedd')
-        DOCKER_HUB_PASSWORD = credentials('Sghair123@+')
-    }
     stage ('Checkout SCM'){
         git branch : 'main', url:'https://github.com/SghairAloui/hazem.git'
     }
@@ -22,7 +18,7 @@ node {
     }
 
     stage ('Push docker image'){
-        bat "docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD"
+        bat "docker login -u moohamedd -p Sghair123@+"
 
         bat "docker push moohamedd/jenkins_test_ci:v1"
     }
