@@ -9,7 +9,6 @@ describe('UserService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(UserService);
-    imports: [HttpClientTestingModule]
   });
 
   it('should be created', () => {
