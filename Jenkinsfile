@@ -1,6 +1,8 @@
 node {
     stage ('Checkout SCM') {
+        bat 'rm -rf C:\ProgramData\Jenkins\.jenkins\workspace\CI_Test_angular'
         bat 'git clone https://github.com/SghairAloui/hazem.git'
+
     }
 
     stage ('Install node module') {
