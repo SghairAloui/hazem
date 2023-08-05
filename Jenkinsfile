@@ -12,5 +12,13 @@ node {
         bat "npm run build --prod"
     }
 
+    stage ('Build docker image'){
+        bat "docker build -t moohamedd/jenkins_test_ci:v1 ."
+    }
+
+    stage ('Push docker image'){
+        bat "docker run moohamedd/jenkins_test_ci:v1"
+    }
+
     
 }
